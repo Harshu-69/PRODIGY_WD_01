@@ -74,9 +74,6 @@ a {
   gap: 3rem;
 }
 
-
-
-
 .links li a {
   font-size: 1.05rem;
   color: #00000085;
@@ -195,6 +192,22 @@ a {
   font-weight: 600;
 }
 
+/* Hamburger */
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: #000;
+  border-radius: 2px;
+}
+
 @media (max-width: 768px) {
   .page1 {
     background-size: contain;
@@ -218,6 +231,28 @@ a {
     width: 100%;
     max-width: 300px;
   }
+  .menu-toggle {
+    display: flex;
+  }
+
+  .links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background: #fff;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 0;
+
+    transform: translateY(-120%);
+    transition: 0.3s ease;
+  }
+
+  .links.active {
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 1024px) {
@@ -232,5 +267,31 @@ a {
 
   .features {
     gap: 1.8rem;
+  }
+
+  .menu-toggle {
+    display: flex;
+    z-index: 1001;
+  }
+
+  .links {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    flex-direction: column;
+    background: #fff;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem 0;
+
+    transform: translateY(-120%);
+    transition: 0.3s ease;
+  }
+
+  .links.active {
+    transform: translateY(0);
   }
 }

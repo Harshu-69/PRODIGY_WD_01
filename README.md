@@ -18,3 +18,12 @@ It features a **fixed and interactive navigation menu** that changes its style o
 - **HTML5** – Structure of the web page  
 - **CSS3** – Styling, layout, and responsiveness  
 - **JavaScript** – Scroll and hover interactivity  
+
+## Folder Structure
+
+PRODIGY_WD_01/
+    Assets/
+    index.html
+    script.js
+    style.css
+

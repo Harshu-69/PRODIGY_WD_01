@@ -20,7 +20,7 @@ It features a **fixed and interactive navigation menu** that changes its style o
 - **JavaScript** – Scroll and hover interactivity  
 
 
-##Live Demo :- https://harshu-69.github.io/PRODIGY_WD_01/
+Live Demo :- https://harshu-69.github.io/PRODIGY_WD_01/
 
 ##Screenshots:
 Desktop
